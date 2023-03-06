@@ -11,12 +11,12 @@ def main():
         sys.exit(-1)
 
     url = sys.argv[1]
-    access_token = getpass('Access Token: ')
-    if not access_token:
-        print('Invalid access token')
+    api_key = getpass('API Key: ')
+    if not api_key:
+        print('Invalid API Key')
         sys.exit(-1)
 
-    client = InstaparserClient(access_token)
+    client = InstaparserClient(api_key)
     response = client.article_api(url)
     print(json.dumps(vars(response), indent=4))    
 

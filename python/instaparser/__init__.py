@@ -22,7 +22,7 @@ class InstaparserResponse(object):
 
 
 class InstaparserClient(object):
-    ENDPOINT = 'https://beta.instaparser.com/api/1'
+    ENDPOINT = 'https://instaparser.com/api/1'
     def __init__(self, api_key):
         self.api_key = api_key
 
